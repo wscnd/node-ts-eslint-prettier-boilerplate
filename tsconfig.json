@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ES2021"
+    ],
+    "target": "ES2015",
+    "module": "commonjs",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipDefaultLibCheck": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "paths": {}
+  },
+  "include": [
+    "config/**/*",
+    "webpack.*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "references": [
+    {
+      "path": "tsconfig.test.json"
+    },
+    {
+      "path": "tsconfig.src.json"
+    }
+  ],
+  "files": [
+    "package.json"
+  ],
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  }
+}

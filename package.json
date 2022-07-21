@@ -1,0 +1,67 @@
+{
+  "name": "ts-eslint-prettier-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsnd --respawn -r tsconfig-paths/register --files ./src/index.ts ",
+    "test": "jest --runInBand",
+    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
+    "test:watch": "jest --watchAll --verbose",
+    "lint:fix": "eslint . --ext .js --ext .ts --fix",
+    "lint": "eslint ./src --ext .js --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wscnd/node-ts-eslint-prettier-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wscnd/node-ts-eslint-prettier-boilerplate/issues"
+  },
+  "homepage": "https://github.com/wscnd/node-ts-eslint-prettier-boilerplate#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@babel/register": "^7.18.6",
+    "@babel/runtime": "^7.18.6",
+    "@types/glob": "^7.2.0",
+    "@types/jest": "^28.1.5",
+    "@types/node": "^18.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "@typescript-eslint/types": "^5.30.6",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^28.1.2",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.2.5",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-webpack-plugin": "^3.2.0",
+    "jest": "^28.1.3",
+    "jest-fetch-mock": "^3.0.3",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^28.0.6",
+    "ts-loader": "^9.3.1",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.0.0",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.7.4",
+    "typescript-transform-paths": "^3.3.1"
+  },
+  "dependencies": {},
+  "files": [
+    "package.json"
+  ]
+}
